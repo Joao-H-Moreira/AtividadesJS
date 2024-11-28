@@ -2,13 +2,16 @@ body {
   background-image: url("../img/Conta.jpg");
   background-size: cover;
 }
-
 a{
   padding: 20px;
   background-color: aliceblue;
+  margin-bottom: 50px;
+}
+
+p{
+  padding-top: 20px;
 }
 
 h1{
-  justify-self: center;
   color: aliceblue;
 }

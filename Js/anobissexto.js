@@ -1,9 +1,9 @@
 document.querySelector('.btn').addEventListener("click", () => {
 let ano = document.querySelector('#ano').value;
 if (isBissexto(ano)) {
-    alert(ano + " é bissexto.");
+    document.getElementById("h1").innerText += `${ano} é bissexto.`;
 } else {
-    alert(ano + " não é bissexto.");
+    document.getElementById("h1").innerText += `${ano} não é bissexto.`;
 }});
 
 
