@@ -1,10 +1,8 @@
-const prompt = require("prompt-sync")();
-
 let ano = parseInt(prompt("Informe o ano que quer saber se é bissexto: ")) ;
 if (isBissexto(ano)) {
-    console.log(ano + " é bissexto.");
+    alert(ano + " é bissexto.");
 } else {
-    console.log(ano + " não é bissexto.");
+    alert(ano + " não é bissexto.");
 }
 
 
