@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/matematica.jpg");
+  background-image: url("../img/dados.jpg");
   background-size: cover;
 }
 
@@ -11,6 +11,7 @@ a{
 
 p{
   padding-top: 20px;
+  color: antiquewhite;
 }
 
 h1{
