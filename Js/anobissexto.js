@@ -1,9 +1,10 @@
-let ano = parseInt(prompt("Informe o ano que quer saber se é bissexto: ")) ;
+document.querySelector('.btn').addEventListener("click", () => {
+let ano = document.querySelector('#ano').value;
 if (isBissexto(ano)) {
     alert(ano + " é bissexto.");
 } else {
     alert(ano + " não é bissexto.");
-}
+}});
 
 
 function isBissexto(ano) {
