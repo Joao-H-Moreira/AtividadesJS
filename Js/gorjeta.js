@@ -5,18 +5,18 @@ switch (avaliacao) {
 case 1 :
 let gorjetab = (conta * 10)/100 ;
 let totalb = conta + gorjetab;
-alert( `Você avaliou o atendimento como Bom o valor da gorjeta foi de R$${gorjetab} e o valor total foi de R$${totalb}`);
+document.getElementById("h1").innerText += `Você avaliou o atendimento como Bom o valor da gorjeta foi de R$${gorjetab} e o valor total foi de R$${totalb}`;
 break;
 case 2:
 let gorjetao = (conta * 15)/100 ;
 let totalo = conta + gorjetao;
-alert(`Você avaliou o atendimento como Otimo o valor da gorjeta foi de R$${gorjetao} e o valor total foi de R$${totalo}`);
+document.getElementById("h1").innerText += `Você avaliou o atendimento como Otimo o valor da gorjeta foi de R$${gorjetao} e o valor total foi de R$${totalo}`;
 break;
 case 3:
 let gorjetae = (conta * 120)/100 ;
 let totale = conta + gorjetae;
-alert(`Você avaliou o atendimento como Excelente o valor da gorjeta foi de R$${gorjetae} e o valor total foi de R$${totale}`);
+document.getElementById("h1").innerText += `Você avaliou o atendimento como Excelente o valor da gorjeta foi de R$${gorjetae} e o valor total foi de R$${totale}`;
 break;
 default:
-alert("Opção inválida")
+document.getElementById("h1").innerText += "Opção inválida"
 }
