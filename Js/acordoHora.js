@@ -1,15 +1,15 @@
-let nome = prompt("Informe seu nome: ")
 let horas = new Date().getHours();
 
  
 if ( horas  >=0 && horas <=5){
-    alert(`Olá ${nome}, Boa noite `)
+    document.getElementById("h1").innerText +="Boa Noite";
 }else if ( horas  >=6 && horas <=12) {
-    alert(`Olá ${nome}, Bom dia `)
+    document.getElementById("h1").innerText +="Bom Dia";
+
 } else if(horas  >=13 && horas <=18 ){
-    alert(`Olá ${nome}, Boa tarde `)
+     document.getElementById("h1").innerText +="Boa Tarde";
 }else if(horas  >=19 && horas <=24 ){
-    alert(`Olá ${nome}, Boa noite `)
+    document.getElementById("h1").innerText +="Boa Noite";
 }else{
-    alert("Erro")
+    document.getElementById("h1").innerText +="Erro";
 }
