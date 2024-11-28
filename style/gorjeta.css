@@ -3,6 +3,11 @@ body {
   background-size: cover;
 }
 
+a{
+  padding: 20px;
+  background-color: aliceblue;
+}
+
 h1{
   justify-self: center;
   color: aliceblue;

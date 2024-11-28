@@ -6,11 +6,12 @@ let Nota4 = parseFloat(prompt(`Informe sua Terceira nota de 0 a 10:`));
 let media = (parseFloat(Nota1) + parseFloat(Nota2) + parseFloat(Nota3) + parseFloat(Nota4))/4 ;
 
 if (media >10 ){
-    alert(`Media invalida`)
+   document.getElementById("h1").innerText += `Media invalida`;
 }else if( media  <5 ){
-   alert(`${Nome}, você esta reprovado. ` )
+   document.getElementById("h1").innerText += `${Nome}, você esta reprovado. `;
 } else if( media  <7 && media >=5  ){
-    alert(`${Nome}, você esta de recuperação. ` )
+    document.getElementById("h1").innerText += `${Nome}, você esta de recuperação. `;
  }else if( media >=7 ){
-    alert(`Parabens ${Nome} você foi aprovado. ` )
+    document.getElementById("h1").innerText += `Parabens ${Nome} você foi aprovado. `; 
  }
+ 
