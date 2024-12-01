@@ -1,7 +1,14 @@
-body{
-    background-image: url('../img/Home.jpg') ;
-    background-size: cover;
+body {
+  background-image: url("../img/fundo-de-curva-azul_53876-113112.avif");
+  background-repeat: none;
+  background-size: 100% 100%;
+  position: relative;
+  height: 100vh;
+  display: block;
+  justify-items: center;
+  font-family: 'Courier New', Courier, monospace;
 }
+
 
 .dropbtn {
   color: #f1f1f1;

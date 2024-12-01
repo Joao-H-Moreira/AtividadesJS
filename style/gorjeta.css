@@ -1,6 +1,13 @@
 body {
-  background-image: url("../img/Conta.jpg");
-  background-size: cover;
+  background-image: url("../img/fundo-de-curva-azul_53876-113112.avif");
+  background-repeat: none;
+  background-size: 100% 100%;
+  position: relative;
+  height: 100vh;
+  display: block;
+  align-content: center;
+  justify-items: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 a{
   padding: 20px;
