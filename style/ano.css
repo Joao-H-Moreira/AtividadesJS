@@ -5,13 +5,11 @@ body {
   position: relative;
   height: 100vh;
   display: block;
-  align-content: center;
   justify-items: center;
   font-family: 'Courier New', Courier, monospace;
 }
 a{
   padding: 20px;
-  background-color: aliceblue;
   margin-bottom: 50px;
 }
 
@@ -19,6 +17,3 @@ p{
   padding-top: 20px;
 }
 
-h1{
-  color: aliceblue;
-}
