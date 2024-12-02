@@ -26,6 +26,7 @@
     </div>
 
 
+    <a href="../index.html">Home</a>
     <div class="flex">
         <label for="senha">Digite a senha:</label>
         <input type="password" name="senha" id="senha" placeholder="Digite sua senha" />
@@ -39,11 +40,11 @@
 
     </div>
     <script>
-        let senha = prompt("Digite uma senha para cadastrar!");
+        let novaSenha = prompt("Digite uma senha para cadastrar!");
         let btnVerifica = document.getElementById("verificar");
         let btnMostraSenha = document.querySelector("#mostraSenha");
 
-        btnVerifica.addEventListener("click", () => verificarSenha(senha));
+        btnVerifica.addEventListener("click", () => verificarSenha(novaSenha));
         btnMostraSenha.addEventListener("click", ()=> mostraSenha());
 
         function verificarSenha(senha){
@@ -51,7 +52,7 @@
             let imprimeFeedback = document.createElement("h3");
             let campoFeedback = document.querySelector("#caixa");
 
-            if(senha == senhaInserida){
+            if(novaSenha == senhaInserida){
                 imprimeFeedback = "Senha correta!"
                 campoFeedback.innerHTML= imprimeFeedback;
                 campoFeedback.classList.replace("oculto", "visivel");
