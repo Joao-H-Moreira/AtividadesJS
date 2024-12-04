@@ -1,0 +1,48 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecionar Ingredientes</title>
+  <link rel="stylesheet" href="ingrediente.css">
+</head>
+<body>
+  <h1>Selecionar Ingredientes</h1>
+  <div class="ingredients">
+    <label><input type="checkbox" value="Arroz"> Arroz</label><br>
+    <label><input type="checkbox" value="Feijão"> Feijão</label><br>
+    <label><input type="checkbox" value="Batata"> Batata</label><br>
+    <label><input type="checkbox" value="Macarrão"> Macarrão</label><br>
+    <label><input type="checkbox" value="Carne"> Carne</label><br>
+  </div>
+  <button id="show-selected">Exibir Ingredientes Selecionados</button>
+  <p class="result" id="result"></p>
+
+  <script>
+    
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+    const showSelectedBtn = document.getElementById('show-selected')
+    const resultDiv = document.getElementById('result')
+
+    showSelectedBtn.addEventListener('click', () => {
+      const selectedIngredients = [] 
+
+   
+      function verificarCheckbox(checkbox) {
+        if (checkbox.checked) {
+          selectedIngredients.push(checkbox.value) 
+        }
+      }
+
+      checkboxes.forEach(verificarCheckbox)
+
+     
+      if (selectedIngredients.length > 0) {
+        resultDiv.textContent = `Ingredientes selecionados: ${selectedIngredients.join(', ')}`
+      } else {
+        resultDiv.textContent = 'Nenhum ingrediente selecionado.'
+      }
+    })
+  </script>
+</body>
+</html>
