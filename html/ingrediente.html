@@ -21,9 +21,6 @@
     </div>
   </div>
 
-
-
-
   <h1>Selecionar Ingredientes</h1>
   <div class="ingredients">
     <label><input type="checkbox" value="Arroz"> Arroz</label><br>
@@ -37,12 +34,12 @@
 
   <script>
     
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]')
-    const showSelectedBtn = document.getElementById('show-selected')
-    const resultDiv = document.getElementById('result')
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]')
+    let showSelectedBtn = document.getElementById('show-selected')
+    let resultDiv = document.getElementById('result')
 
     showSelectedBtn.addEventListener('click', () => {
-      const selectedIngredients = [] 
+      let selectedIngredients = [] 
 
    
       function verificarCheckbox(checkbox) {
